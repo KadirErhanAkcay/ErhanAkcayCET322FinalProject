@@ -1,0 +1,20 @@
+﻿@model ErhanAkcayCET322FinalProject.Models.MatchReports
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url(../images/stadiumbackground.jpg);
+            margin: 0;
+        }
+    </style>
+}
+
+
+<h5 align"center"><partial>@Model.Timestamp</partial></h5>
+<h5 align="center"><p>@Model.MatchName</p></h5>
+<h5 align="center">Match Result<p>@Model.MatchScore</p></h5>
+<h5 align="center">Match Report</h5>
+<h5 align="center"><p>@Model.Contents</p></h5>
+
+
+
+

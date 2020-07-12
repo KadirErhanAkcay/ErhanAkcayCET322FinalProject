@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ErhanAkcayCET322FinalProject.Models.MatchReports>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/_admin.cshtml";
+}
+
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url(../images/stadiumbackground.jpg);
+            margin: 0;
+        }
+    </style>
+}
+<h1>Match Reports</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MatchId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contents)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MatchId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contents)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

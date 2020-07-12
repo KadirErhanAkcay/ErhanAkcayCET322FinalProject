@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="~/css/site1.css" />
+    <link rel="stylesheet" href="~/css/boxes.css" />
+    <link rel="stylesheet" href="~/css/site1.css" />
+    <link rel="stylesheet" href="~/fonts/font_awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' rel=”stylesheet”>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    @RenderSection("head", required: false)
+
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="container">
+            <div class="col col67 logo">
+                <p><img src="~/images/whistle.png" />Erhan Sports<span>Futbol Burada!</span></p>
+            </div>
+            <div class="col col33">
+                ...
+            </div>
+            <br class="clearFix" />
+            <div class="nav">
+                <ul>
+                    
+                    <li><a asp-controller="Home" asp-action="Index">Home Page</a></li>
+                    <li><a asp-controller="Teams" asp-action="Allteams">All Teams</a></li>
+                    <li><a href="/tables">League Tables</a></li>
+                    <li><partial name="_LoginPartial" /></li>
+
+                </ul>
+                <ul>
+                    <li><a href="/admin">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="pagecontent">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            
+        </div>
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

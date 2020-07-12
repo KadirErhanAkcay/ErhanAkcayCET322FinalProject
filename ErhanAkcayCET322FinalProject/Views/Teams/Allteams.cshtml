@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ErhanAkcayCET322FinalProject.Models.Team>
+
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url(../images/stadiumbackground.jpg);
+            margin: 0;
+        }
+    </style>
+}
+<p>
+
+</p>
+<h2>All Teams</h2>
+<h4>
+    <table class="table" align="center">
+        <thead>
+
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td align="center">
+                        <a asp-controller="Teams" asp-action="teamprofile" asp-route-TeamName="@item.TeamName">@item.TeamName</a>
+                    </td>
+
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</h4>
+

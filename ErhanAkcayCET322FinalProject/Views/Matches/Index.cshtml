@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ErhanAkcayCET322FinalProject.Models.Matches>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/_admin.cshtml";
+}
+
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url(../images/stadiumbackground.jpg);
+            margin: 0;
+        }
+    </style>
+}
+<h1>Matches</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HomeTeamId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AwayTeamId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HomeGoals)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AwayGoals)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Timestamp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HomeTeamId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AwayTeamId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HomeGoals)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AwayGoals)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Timestamp)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

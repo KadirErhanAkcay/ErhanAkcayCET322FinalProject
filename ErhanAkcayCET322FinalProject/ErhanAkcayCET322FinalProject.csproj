@@ -1,0 +1,227 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-ErhanAkcayCET322FinalProject-FF2B7BB8-5A4D-425D-B5B0-C01273E89E43</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\css\css\**" />
+    <Content Remove="wwwroot\css\css\**" />
+    <EmbeddedResource Remove="wwwroot\css\css\**" />
+    <None Remove="wwwroot\css\css\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\boxes.css" />
+    <Content Remove="wwwroot\css\reset.css" />
+    <Content Remove="wwwroot\css\site1.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Content\Images\background.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\Content\Images\background.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+    <Folder Include="Areas\Theme\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\.gitattributes" />
+    <None Include="wwwroot\about.html" />
+    <None Include="wwwroot\blog.html" />
+    <None Include="wwwroot\contact.html" />
+    <None Include="wwwroot\contact.php" />
+    <None Include="wwwroot\css\boxes.css" />
+    <None Include="wwwroot\css\reset.css" />
+    <None Include="wwwroot\css\site1.css" />
+    <None Include="wwwroot\fonts\flaticon.css" />
+    <None Include="wwwroot\fonts\Flaticon.eot" />
+    <None Include="wwwroot\fonts\flaticon.html" />
+    <None Include="wwwroot\fonts\Flaticon.svg" />
+    <None Include="wwwroot\fonts\Flaticon.ttf" />
+    <None Include="wwwroot\fonts\Flaticon.woff" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\fonts\_flaticon.scss" />
+    <None Include="wwwroot\images\background.jpg" />
+    <None Include="wwwroot\images\images\about.jpeg" />
+    <None Include="wwwroot\images\images\about.png" />
+    <None Include="wwwroot\images\images\ajax-loader.gif" />
+    <None Include="wwwroot\images\images\banner-layer-1.png" />
+    <None Include="wwwroot\images\images\banner1.png" />
+    <None Include="wwwroot\images\images\bg.png" />
+    <None Include="wwwroot\images\images\bg1.jpg" />
+    <None Include="wwwroot\images\images\bg1.png" />
+    <None Include="wwwroot\images\images\c.png" />
+    <None Include="wwwroot\images\images\client.png" />
+    <None Include="wwwroot\images\images\cyling.jpg" />
+    <None Include="wwwroot\images\images\footer-logo.png" />
+    <None Include="wwwroot\images\images\img-01.jpg" />
+    <None Include="wwwroot\images\images\img-01.png" />
+    <None Include="wwwroot\images\images\img-01_002.jpg" />
+    <None Include="wwwroot\images\images\img-01_002.png" />
+    <None Include="wwwroot\images\images\img-01_003.jpg" />
+    <None Include="wwwroot\images\images\img-01_003.png" />
+    <None Include="wwwroot\images\images\img-01_004.jpg" />
+    <None Include="wwwroot\images\images\img-01_004.png" />
+    <None Include="wwwroot\images\images\img-02.jpg" />
+    <None Include="wwwroot\images\images\img-02.png" />
+    <None Include="wwwroot\images\images\img-02_002.jpg" />
+    <None Include="wwwroot\images\images\img-02_002.png" />
+    <None Include="wwwroot\images\images\img-02_003.jpg" />
+    <None Include="wwwroot\images\images\img-02_003.png" />
+    <None Include="wwwroot\images\images\img-03.jpg" />
+    <None Include="wwwroot\images\images\img-03.png" />
+    <None Include="wwwroot\images\images\img-03_002.jpg" />
+    <None Include="wwwroot\images\images\img-03_002.png" />
+    <None Include="wwwroot\images\images\img-03_003.jpg" />
+    <None Include="wwwroot\images\images\img-03_003.png" />
+    <None Include="wwwroot\images\images\img-03_004.png" />
+    <None Include="wwwroot\images\images\img-04.jpg" />
+    <None Include="wwwroot\images\images\img-04.png" />
+    <None Include="wwwroot\images\images\img-04_002.jpg" />
+    <None Include="wwwroot\images\images\img-04_002.png" />
+    <None Include="wwwroot\images\images\img-04_003.png" />
+    <None Include="wwwroot\images\images\img-04_004.png" />
+    <None Include="wwwroot\images\images\img-05.jpg" />
+    <None Include="wwwroot\images\images\img-05.png" />
+    <None Include="wwwroot\images\images\img-05_002.jpg" />
+    <None Include="wwwroot\images\images\img-05_002.png" />
+    <None Include="wwwroot\images\images\img-05_003.png" />
+    <None Include="wwwroot\images\images\img-06.jpg" />
+    <None Include="wwwroot\images\images\img-06.png" />
+    <None Include="wwwroot\images\images\img-06_002.png" />
+    <None Include="wwwroot\images\images\img-07.jpg" />
+    <None Include="wwwroot\images\images\img-07.png" />
+    <None Include="wwwroot\images\images\img-07_002.png" />
+    <None Include="wwwroot\images\images\img-08.jpg" />
+    <None Include="wwwroot\images\images\img-08.png" />
+    <None Include="wwwroot\images\images\img-08_002.png" />
+    <None Include="wwwroot\images\images\img-1-1.jpg" />
+    <None Include="wwwroot\images\images\img-1-2.jpg" />
+    <None Include="wwwroot\images\images\img-1-3.jpg" />
+    <None Include="wwwroot\images\images\img-1-4.jpg" />
+    <None Include="wwwroot\images\images\img-2-1.jpg" />
+    <None Include="wwwroot\images\images\img-2-2.jpg" />
+    <None Include="wwwroot\images\images\img-2-3.jpg" />
+    <None Include="wwwroot\images\images\img-2-4.jpg" />
+    <None Include="wwwroot\images\images\loading-img.gif" />
+    <None Include="wwwroot\images\images\logo.png" />
+    <None Include="wwwroot\images\images\main-slider-img1.jpg" />
+    <None Include="wwwroot\images\images\match-banner1.jpg" />
+    <None Include="wwwroot\images\images\match-start-img.png" />
+    <None Include="wwwroot\images\images\new_img\1.jpg" />
+    <None Include="wwwroot\images\images\new_img\111.jpg" />
+    <None Include="wwwroot\images\images\new_img\23.jpg" />
+    <None Include="wwwroot\images\images\new_img\33.jpg" />
+    <None Include="wwwroot\images\images\new_img\5-98x98.png" />
+    <None Include="wwwroot\images\images\new_img\5.jpg" />
+    <None Include="wwwroot\images\images\new_img\6-98x98.png" />
+    <None Include="wwwroot\images\images\new_img\62.jpg" />
+    <None Include="wwwroot\images\images\new_img\7-98x98.png" />
+    <None Include="wwwroot\images\images\new_img\72.jpg" />
+    <None Include="wwwroot\images\images\new_img\8-98x98.png" />
+    <None Include="wwwroot\images\images\new_img\8.jpg" />
+    <None Include="wwwroot\images\images\new_img\82.jpg" />
+    <None Include="wwwroot\images\images\new_img\bg1.png" />
+    <None Include="wwwroot\images\images\new_img\Blonde-Soccer-Ball-Football-Baby-1800x2880.jpg" />
+    <None Include="wwwroot\images\images\new_img\img1.jpg" />
+    <None Include="wwwroot\images\images\new_img\img2.jpg" />
+    <None Include="wwwroot\images\images\new_img\img3.jpg" />
+    <None Include="wwwroot\images\images\new_img\logo.png" />
+    <None Include="wwwroot\images\images\phonebg.png" />
+    <None Include="wwwroot\images\images\post2.png" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_rounded\btnNext.png" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_rounded\btnPrevious.png" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_rounded\contentPattern.png" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_rounded\default_thumbnail.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_rounded\loader.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_rounded\sprite.png" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_square\btnNext.png" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_square\btnPrevious.png" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_square\contentPattern.png" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_square\default_thumbnail.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_square\loader.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\dark_square\sprite.png" />
+    <None Include="wwwroot\images\images\prettyphoto\default\default_thumb.png" />
+    <None Include="wwwroot\images\images\prettyphoto\default\loader.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\default\sprite.png" />
+    <None Include="wwwroot\images\images\prettyphoto\default\sprite_next.png" />
+    <None Include="wwwroot\images\images\prettyphoto\default\sprite_prev.png" />
+    <None Include="wwwroot\images\images\prettyphoto\default\sprite_x.png" />
+    <None Include="wwwroot\images\images\prettyphoto\default\sprite_y.png" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\btnNext.png" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\btnPrevious.png" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\contentPatternBottom.png" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\contentPatternLeft.png" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\contentPatternRight.png" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\contentPatternTop.png" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\default_thumbnail.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\loader.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\facebook\sprite.png" />
+    <None Include="wwwroot\images\images\prettyphoto\light_rounded\btnNext.png" />
+    <None Include="wwwroot\images\images\prettyphoto\light_rounded\btnPrevious.png" />
+    <None Include="wwwroot\images\images\prettyphoto\light_rounded\default_thumbnail.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\light_rounded\loader.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\light_rounded\sprite.png" />
+    <None Include="wwwroot\images\images\prettyphoto\light_square\btnNext.png" />
+    <None Include="wwwroot\images\images\prettyphoto\light_square\btnPrevious.png" />
+    <None Include="wwwroot\images\images\prettyphoto\light_square\default_thumbnail.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\light_square\loader.gif" />
+    <None Include="wwwroot\images\images\prettyphoto\light_square\sprite.png" />
+    <None Include="wwwroot\images\images\profile-img.png" />
+    <None Include="wwwroot\images\images\profile-img2.png" />
+    <None Include="wwwroot\images\images\sport-mate.png" />
+    <None Include="wwwroot\images\images\Sports_ball__twitter_.jpg" />
+    <None Include="wwwroot\images\images\stadium.png" />
+    <None Include="wwwroot\images\images\walle.jpg" />
+    <None Include="wwwroot\images\stadium.jpg" />
+    <None Include="wwwroot\images\stadium.png" />
+    <None Include="wwwroot\images\whistle.png" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\js\js\3dslider.js" />
+    <None Include="wwwroot\js\js\all.js" />
+    <None Include="wwwroot\js\js\animate.js" />
+    <None Include="wwwroot\js\js\custom.js" />
+    <None Include="wwwroot\js\js\hoverdir.js" />
+    <None Include="wwwroot\js\js\jquery.prettyPhoto.js" />
+    <None Include="wwwroot\js\js\jquery.vide.js" />
+    <None Include="wwwroot\js\js\map.js" />
+    <None Include="wwwroot\js\js\modernizer.js" />
+    <None Include="wwwroot\js\js\owl.carousel.js" />
+    <None Include="wwwroot\js\js\portfolio.js" />
+    <None Include="wwwroot\js\js\retina.js" />
+    <None Include="wwwroot\js\js\scroll.js" />
+    <None Include="wwwroot\news.html" />
+    <None Include="wwwroot\preview_img\preview.jpg" />
+    <None Include="wwwroot\README.md" />
+    <None Include="wwwroot\single-blog.html" />
+    <None Include="wwwroot\style.css" />
+    <None Include="wwwroot\team.html" />
+  </ItemGroup>
+
+</Project>

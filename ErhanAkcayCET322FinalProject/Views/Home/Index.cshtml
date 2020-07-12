@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ErhanAkcayCET322FinalProject.Models.MatchReports>
+@{
+    ViewBag.Title = "ErhanSports";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url(../images/stadiumbackground.jpg);
+            margin: 0;
+        }
+    </style>
+}
+<h3 align="center">Match Reports</h3>
+@foreach (var item in Model)
+{
+<h4 align="center"> <a asp-controller="MatchReports" asp-action="matchprofile" asp-route-MatchId="@item.MatchId">@item.MatchName</a></h4>
+
+
+}
+
+<p class="timestamp">12 July 2020 at 23:59</p>
+<p class="matchheader"><img src="~/images/cemilustasezonu.jpg" /></p>
+

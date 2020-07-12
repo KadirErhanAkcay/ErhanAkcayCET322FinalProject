@@ -1,0 +1,27 @@
+﻿@model ErhanAkcayCET322FinalProject.Models.Team
+
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url(../images/stadiumbackground.jpg);
+            margin: 0;
+        }
+    </style>
+}
+<h4 align="left">
+    <div>
+        <ul>
+
+
+            <li><a>@Model.TeamName</a></li>
+            <li><a>@Model.Country</a></li>
+            <li><a>@Model.City</a></li>
+
+
+        </ul>
+
+    </div>
+</h4>
+<h4>Matches of <a>@Model.TeamName</a></h4>
+<h5>Click For Details</h5>
+<h5>@await Component.InvokeAsync("TeamProfileViewComponent", new { Id = Model.TeamId })</h5>

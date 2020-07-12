@@ -1,0 +1,39 @@
+﻿@model ErhanAkcayCET322FinalProject.Models.MatchReports
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/_admin.cshtml";
+}
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url(../images/stadiumbackground.jpg);
+            margin: 0;
+        }
+    </style>
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MatchReports</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MatchId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MatchId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contents)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contents)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

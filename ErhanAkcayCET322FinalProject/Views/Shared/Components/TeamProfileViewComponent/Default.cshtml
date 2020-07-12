@@ -1,0 +1,10 @@
+﻿@model IEnumerable<ErhanAkcayCET322FinalProject.Models.Matches>
+
+<div>
+    @foreach (var item in Model)
+    {
+        <a asp-controller="MatchReports" asp-action="matchprofile" asp-route-MatchId="@item.Id">@item.MatchName</a>
+        
+
+    }
+</div>
